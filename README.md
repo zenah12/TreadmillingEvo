@@ -5,6 +5,8 @@ Code was written on c++.
 
 The main evolution algorithm runs in main.cpp that tracks the filament size and position of all bound subunits. For a given set of parameters the algorithm computes a mean value for the filament length. the parameters are then mutated and a new mean length is computed. Then a selection step determines whether the new parameters are accepted or not. The process continues until the mean length is within a window of the target. 
 
+Global.hpp contains definitions of contants and global parameters used in the program. 
+
 Filaments.cpp and Filaments.hpp contain functions that update the filament state using the Gillespie scheme. 
 
 Evolution.cpp and Evolution.hpp contains functions that impose mutation on paremeters and selection. 
